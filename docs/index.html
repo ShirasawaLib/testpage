@@ -7,21 +7,13 @@
 </head>
 
 <body>
-    <h1>トラッキングテストHappy</h1>
-    <script type="text/javascript">
-piAId = '213471';
-piCId = '38494';
-piHostname = 'pi.demo.pardot.com';
-
-(function() {
-	function async_load(){
-		var s = document.createElement('script'); s.type = 'text/javascript';
-		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
-		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
-	}
-	if(window.attachEvent) { window.attachEvent('onload', async_load); }
-	else { window.addEventListener('load', async_load, false); }
-})();
-</script>
+    <h1>フォームハンドラーテスト</h1>
+	<form action="http://form.shirasawa.site/l/212471/2021-02-24/kcv6p" method="post">
+		<label>メールアドレス</label><input name="email" placeholder="pardot@test.jp" type="email" required="required"/><br/>
+		<label>姓</label><input name="first_name" type="text" /><br/>
+		<label>名</label><input name="last_name" type="text" /><br/>
+		<label>会社名</label><input name="company" type="text" required="required"/><br/>
+		<button type="submit">送信</button>
+	</form>
 </body>
 </html>
