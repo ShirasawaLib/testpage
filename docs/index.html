@@ -5,7 +5,7 @@
 	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script>
-		function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") { var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value); elems["ts"] = JSON.stringify(new Date().getTime()); document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+		function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") { var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value); elems["ts"] = JSON.stringify(new Date().getTime()); document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
 	</script>
 	<title>テストページ</title>
 </head>
@@ -25,7 +25,7 @@
 		<label for="email">メール</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
 		<label for="company">会社名</label><input id="company" maxlength="40" name="company" size="20" type="text" /><br>
-		<div class="g-recaptcha" data-sitekey="6LekKG4aAAAAALnxEuxMB0kFH-RolUCQV_pTT0AI"></div><br>
+		<div class="g-recaptcha" data-sitekey="6LekKG4aAAAAALnxEuxMB0kFH-RolUCQV_pTT0AI" data-size="invisible"></div><br>
 		<input type="submit" name="submit">
 
 	</form>
